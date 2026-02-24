@@ -1,0 +1,12 @@
+# provider 可选: openai | deepseek | aliyun_bailian
+provider: "deepseek"
+
+# 下面两个字段可选；不填则使用 provider 的默认值
+base_url: "https://api.deepseek.com/v1"
+model: "deepseek-chat"
+timeout: 60
+
+# 支持多个 key，程序会自动轮询重试
+api_keys:
+  - "sk-your-key-1"
+  - "sk-your-key-2"
